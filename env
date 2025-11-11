@@ -1,5 +1,14 @@
+# .env\
+# Server settings
 PORT=8000
-MONGODB_URL=mongodb://127.0.0.1:27017/user-auth
-JWT_ACCESS_SECRET=very_secure
-JWT_REFRESH_SECRET=very_secure
 NODE_ENV=development
+
+# Database connection
+MONGODB_URL=mongodb://127.0.0.1:27017/user-auth
+
+# Authentication secrets
+JWT_ACCESS_SECRET=very_secure_access_key
+JWT_REFRESH_SECRET=very_secure_refresh_key
+
+# Frontend origin (CORS)
+FRONTEND_ORIGIN=http://localhost:3000
